@@ -1,4 +1,4 @@
-package com.example.JoJoLedo;
+package com.example.JoJoLedo.model;
 
 public class Person {
 

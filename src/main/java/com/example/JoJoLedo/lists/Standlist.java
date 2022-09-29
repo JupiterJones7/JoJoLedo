@@ -1,4 +1,6 @@
-package com.example.JoJoLedo;
+package com.example.JoJoLedo.lists;
+
+import com.example.JoJoLedo.model.Stand;
 
 import java.util.List;
 
