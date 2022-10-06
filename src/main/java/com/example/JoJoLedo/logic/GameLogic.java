@@ -30,7 +30,6 @@ public class GameLogic {
     * @return true if games ends, false if another suggestion is allowed
     */
    public boolean evaluateSuggestion(Crime suggestion, Crime secret, int numberOfSuggestion, int maxNumberOfSuggestions){
-      //To be done
       return false;
    }
 }
