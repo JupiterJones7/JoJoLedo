@@ -30,6 +30,25 @@ public class GameLogic {
     * @return true if games ends, false if another suggestion is allowed
     */
    public boolean evaluateSuggestion(Crime suggestion, Crime secret, int numberOfSuggestion, int maxNumberOfSuggestions){
-      return false;
+      if(suggestion.getActor() == secret.getActor()){
+         secret.getHistory().add("1");
+      }
+      if(suggestion.getWeapon() == secret.getWeapon()){
+         secret.getHistory().add("1");
+      }
+      if(suggestion.getScene() == secret.getScene()){
+         secret.getHistory().add("1");
+      }
+
+      if(suggestion.getActor() != secret.getActor()){
+         secret.getHistory().add("0");
+      }
+      if(suggestion.getWeapon() != secret.getWeapon()){
+         secret.getHistory().add("0");
+      }
+      if(suggestion.getScene() != secret.getScene()){
+         secret.getHistory().add("0");
+      }
+      return secret.getHistory().contains("3");
    }
 }
